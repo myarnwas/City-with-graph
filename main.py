@@ -56,6 +56,7 @@ graph.add_edge("Hospital", "Mall", 10)
 graph.add_edge("School", "Store", 9)
 graph.add_edge("Library", "Store", 1)
 graph.add_edge("Park", "Hospital", 8)
+
 print(graph)
 
 path, total = graph.dijkstra("Hospital", "Mall")
@@ -66,3 +67,5 @@ print("Total time:", total)
 path1, total1 = graph.dijkstra("Hospital", 'Store')
 print("Shortest path:", path1)
 print("Total time:", total1)
+
+graph.bfs("School")
